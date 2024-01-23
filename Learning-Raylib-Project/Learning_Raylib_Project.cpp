@@ -10,12 +10,13 @@ int main()
     string question;
     do
     {
-        question = "";
-        srand(time(nullptr));
-        int nombreChoisi = rand() % 100 + 1;
         cout << "Pose moi une question\n";
         cin >> question;
-        if (nombreChoisi <= 50)
+        
+        srand(time(nullptr));
+        int proba = rand() % 100 + 1;
+        
+        if (proba <= 50)
         {
             cout << "Oui.\n";
         }
