@@ -1,4 +1,4 @@
-#include <raylib.h>
+#include <filesystem>
 #include <iostream>
 #include <vector>
 #include <string>
@@ -6,11 +6,16 @@
 using namespace std;
 int main()
 {
-    vector<string> noms {"Annie", "Evann", "Jean", "Michel"};
-
-    for (string nom : noms)
+    string question;
+    do
     {
-        cout << "Bonjour " + nom << endl;
-    }
+        cout << "Pose moi une question";
+        cin >> question;
+        
+    }while (question != "partir");
+
+    cout << "Adieu.";
+    
     return 0;
 }
+
