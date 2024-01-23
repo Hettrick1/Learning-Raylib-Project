@@ -7,7 +7,7 @@
 using namespace std;
 int main()
 {
-    string question;
+    string question = "";
     do
     {
         cout << "Pose moi une question\n";
